@@ -1,10 +1,15 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
+  const goToOtherScreen = () => {
+    navigation.navigate('BookRide'); // Navigate to 'Other' screen
+  };
+
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>User Home Screen</Text>
+      <Text>Home Screen</Text>
+      <Button title="Go to Book the Ride" onPress={goToOtherScreen} />
     </View>
   );
 };

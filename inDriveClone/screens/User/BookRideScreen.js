@@ -1,10 +1,24 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, Alert } from 'react-native';
 
 const BookRideScreen = () => {
   const handleBookRide = () => {
-    // Implement logic to book a ride
+    // Simulate booking process
     console.log('Booking a ride...');
+
+    // Showing an alert message to indicate that the ride has been booked
+    Alert.alert(
+      'Ride Booked',
+      'Your ride has been successfully booked!',
+      [
+        {
+          text: 'OK',
+          onPress: () => console.log('OK Pressed'),
+          style: 'cancel',
+        },
+      ],
+      { cancelable: false }
+    );
   };
 
   return (

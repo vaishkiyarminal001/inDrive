@@ -2,12 +2,12 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: "incab-f4857.firebaseapp.com",
+  projectId: "incab-f4857",
+  storageBucket: "incab-f4857.appspot.com",
+  messagingSenderId: "517705592774",
+  appId: "1:517705592774:web:2ff09536e8eb8a61f94cc7"
 };
 
 if (!firebase.apps.length) {
